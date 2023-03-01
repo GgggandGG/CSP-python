@@ -25,6 +25,7 @@ def Mij_function(i,j,M):
         for v in range(8):
             Mij_ += 1/4 * alpha_function(u) * alpha_function(v) * M[u,v] * np.cos(np.pi/8 * (i + 1/2) * u) * np.cos(np.pi / 8 * (j + 0.5) * v)
     return Mij_
+
 def main():
     Q = receive_Q()
     num_to_scan = int(input()) # 扫描的数据数
